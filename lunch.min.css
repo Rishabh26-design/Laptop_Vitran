@@ -1,0 +1,79 @@
+@font-face {
+    font-family: Eczar-SemiBold;
+    src: url(fonts/Eczar-SemiBold.ttf)
+}
+
+@font-face {
+    font-family: 'Eczar-Regular';
+    src: url(fonts/Eczar-Regular.ttf)
+}
+
+
+@font-face {
+    font-family: Eczar-Bold;
+    src: url(fonts/Eczar-Bold.ttf)
+}
+
+@font-face {
+    font-family: Eczar-Medium;
+    src: url(fonts/Eczar-Medium.ttf)
+}
+.foot-text p {
+    font-family: 'Eczar-Bold';
+    font-size: 25px !important;
+}
+
+.inner-address h3 {
+    font-size: 22px;
+    font-family: 'Eczar-Regular';
+}
+
+
+a.onlcik-button {
+    color: #000;
+    text-decoration: none;
+    background-color: #effede;
+    padding: 7px 27px;
+    border-radius: 120px;
+    font-family: 'Eczar-SemiBold';
+    font-size: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.user-text li {
+    font-size: 30px;
+    font-family: 'Eczar-SemiBold';
+    color: #FF5722;
+}
+span.monthnext{
+    font-size: 25px;
+}
+
+h3.satetext {
+    font-size: clamp(1.2rem, 2.2vw, 6rem);
+    font-family: 'Eczar-SemiBold' !important;
+    padding: 0px;
+}
+
+h3.gastext {
+    color: #000;
+    font-family: 'Eczar-Medium';
+    font-size: 16px;
+}
+
+span.textsmall {
+    font-size: 25px;
+}
+
+.sdsd p {
+    padding: 0px;
+    font-size: 33px;
+    font-family: 'Eczar-SemiBold';
+    color: #375d6f;
+}
+
+ul.user-text {
+    border: 1px dashed #000;
+    padding: 4px 48px;
+    border-radius: 122px;
+}
