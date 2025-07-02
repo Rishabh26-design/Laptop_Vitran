@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madhya Pradesh Education Portal - Laptop Distribution Dashboard</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+
+
+</head>
+<body>
+    <div class="container-fluid container1">
+        <!-- Header -->
+        <div class="header">
+            <div class="logo-section">
+                <img src="images/EduLogo.png" alt="Logo" style="width: 17vw;  object-fit: contain; border-radius: 8px;">
+                <div class="header-text">
+                    <!-- Removed the h1 heading -->
+                </div>
+            </div>
+             <div id="Heading" style="width: 100%; text-align: center; margin-top: 10px;">
+                <p style="font-size: 2rem; font-weight: 700; color: #fff; margin: 0; text-shadow: 2px 2px 8px #4e5bb1, 0 2px 8px #00000080;">Laptop Distribution Scheame</p>
+            </div>
+            <div>
+                <select class="academic-year" >
+                    <option value="0">Academic Year 2024-25</option>
+                    <option value="1">Academic Year 2023-24</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Main Statistics -->
+     
+        <div class="card">
+            <div class="stat-card">
+                <div class="stat-label">Total Verified <br> Beneficiary</div>
+                <div class="stat-value">94,234 <span class="mini-stat-detail">(In Nos)</span></div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Total Boys</div>
+                <div class="stat-value">37,988 <span class="mini-stat-detail">(In Nos)</span></div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Total Girls</div>
+                <div class="stat-value">56,246 <span class="mini-stat-detail">(In Nos)</span></div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Total Budget <br>Amount</div>
+                <div class="stat-value">235.58 Cr. <span class="mini-stat-detail">(In INR)</span></div>
+            </div>
+        </div>
+
+        <!-- Charts Section -->
+        <div class="charts-container">
+            <!-- Category Wise Chart -->
+            <div class="chart-card ">
+                <div>
+                    <h3 class="chart-title " style="display: inline;">Category Wise Details </h3>
+                    <p style="text-align: center; font-weight: 600;font-size: 12px; color: #ff8787; display: inline;">(In Nos)</p>
+                    <p style="text-align: center; font-weight: 600; font-size: 0.9; color: #666; display: inline;float: right;">Total Beneficiary: 94,234</p>
+                </div>
+                <div class="chart-wrapper">
+                    <canvas id="categoryChart"></canvas>
+                </div>
+                
+            </div>
+
+            <!-- Management Type Wise Section (now side by side with Category Wise) -->
+             <div class="chart-card ">
+                <!-- <h3 class="chart-title">Management Type Wise (In INR)</h3> -->
+                <div class="school-type">
+                    <h3>Government School's Beneficiary</h3>
+                    <div class="school-stats">
+                        <div class="mini-stat">
+                            <div class="mini-stat-label">Total Boys Beneficiary</div>
+                          
+                            <div class="mini-stat-value">18,292 <span class="mini-stat-detail">(In Nos)</span></div>
+                        </div>
+                        <div class="mini-stat">
+                            <div class="mini-stat-label">Total Girls Beneficiary</div>
+      
+                            <div class="mini-stat-value">30,988 <span class="mini-stat-detail">(In Nos)</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="school-type mt-3">
+                    <h3>Private School's Beneficiary</h3>
+                    <div class="school-stats">
+                        <div class="mini-stat">
+                            <div class="mini-stat-label">Total Boys Beneficiary</div>
+                            
+                            <div class="mini-stat-value">19,696 <span class="mini-stat-detail">(In Nos)</span></div>
+                        </div>
+                        <div class="mini-stat">
+                            <div class="mini-stat-label">Total Girls Beneficiary</div>
+                          
+                            <div class="mini-stat-value">25,276 <span class="mini-stat-detail">(In Nos)</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
