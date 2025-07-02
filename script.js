@@ -1,5 +1,7 @@
-document.addEventListener('DOMContentLoaded', function () {
+
 // Category Wise Doughnut Chart
+
+document.addEventListener('DOMContentLoaded', function() {
    const categoryCtx = document.getElementById('categoryChart').getContext('2d');
 categoryCtx.canvas.width = 650;
 categoryCtx.canvas.height = 450;
@@ -91,4 +93,4 @@ new Chart(categoryCtx, {
             // Add hover effects to mini stats
        
         });
-    });
+        });
